@@ -339,7 +339,108 @@ header .ham-burger.active span:nth-child(2){
 	color:#c11325;;
 }
 
-
+.coach .content {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 40px;
+  }
+  
+  .photo-container {
+	width: 100%;
+	max-width: 400px;
+	overflow: hidden;
+	border-radius: 15px;
+	box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  }
+  
+  .photo-container img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	border-radius: 15px;
+	transition: transform 0.4s ease;
+  }
+  
+  .photo-container img:hover {
+	transform: scale(1.05);
+  }
+  
+  .box.text h2 {
+	font-size: 2rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #e53935;
+	margin-bottom: 20px;
+  }
+  
+  .box.text p {
+	font-size: 1rem;
+	line-height: 1.7;
+	color: #333;
+	margin-bottom: 15px;
+  }
+  
+  .coach-details {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+	gap: 20px;
+	margin: 30px 0;
+  }
+  
+  .detail {
+	background: #fff;
+	border-radius: 15px;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+	padding: 20px;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .detail:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+  
+  .detail .icon {
+	font-size: 2rem;
+	display: block;
+	margin-bottom: 10px;
+	color: #e53935;
+  }
+  
+  .detail h4 {
+	font-size: 1.2rem;
+	font-weight: 600;
+	margin-bottom: 10px;
+	color: #e53935;
+  }
+  
+  .detail ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+  }
+  
+  .detail ul li {
+	font-size: 0.95rem;
+	color: #555;
+	line-height: 1.5;
+	margin-bottom: 6px;
+  }
+  
+  .box.text .btn {
+	background: #e53935;
+	color: #fff;
+	padding: 10px 25px;
+	border-radius: 30px;
+	text-decoration: none;
+	font-weight: 600;
+	transition: background 0.3s ease;
+  }
+  
+  .box.text .btn:hover {
+	background: #ff7043;
+  }
 /*About section*/
 
 .about{
