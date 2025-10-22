@@ -420,7 +420,39 @@ header .ham-burger.active span:nth-child(2){
 	padding: 0;
 	margin: 0;
   }
+  .coach-actions {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	margin-top: 20px;
+  }
   
+  .coach-actions .social-links {
+	display: flex;
+	gap: 15px;
+  }
+  
+  .coach-actions .social {
+	font-size: 22px;
+	color: #fff;
+	background: #333;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.3s ease;
+	text-decoration: none;
+  }
+  
+  .coach-actions .social.fb:hover {
+	background: #1877f2;
+  }
+  
+  .coach-actions .social.ig:hover {
+	background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
+  }
   .detail ul li {
 	font-size: 0.95rem;
 	color: #555;
@@ -1185,3 +1217,105 @@ flex: 0 0 100%;
 }
 
 
+
+
+/* SECTION ACCUEIL */
+.home {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+  }
+  
+  /* Image de fond */
+  .background-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url("images/home-bg.jpg"); /* 🔁 Mets ici ton image */
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed; /* effet de profondeur au scroll */
+	z-index: 0;
+  }
+  
+  /* Overlay sombre */
+  .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.55);
+	z-index: 1;
+  }
+  
+  /* Contenu */
+  .hero-content {
+	position: relative;
+	z-index: 2;
+	max-width: 800px;
+	padding: 0 20px;
+  }
+  
+  .hero-content h1 {
+	font-size: 3rem;
+	font-weight: 700;
+	line-height: 1.3;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+  }
+  
+  .hero-content .highlight {
+	background: linear-gradient(90deg, #ff5f6d, #ffc371);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  }
+  
+  .hero-content p {
+	font-size: 1.2rem;
+	opacity: 0.9;
+	margin-bottom: 35px;
+  }
+  
+  /* Bouton principal */
+  .btn-hero {
+	background: linear-gradient(90deg, #ff512f, #dd2476);
+	color: #fff;
+	padding: 14px 36px;
+	border-radius: 50px;
+	text-decoration: none;
+	font-weight: 600;
+	transition: all 0.3s ease;
+  }
+  
+  .btn-hero:hover {
+	background: linear-gradient(90deg, #dd2476, #ff512f);
+	transform: scale(1.05);
+  }
+  
+  /* Flèche scroll */
+  .go-down {
+	position: absolute;
+	bottom: 25px;
+	left: 50%;
+	transform: translateX(-50%);
+	color: #fff;
+	font-size: 30px;
+	animation: bounce 2s infinite;
+	z-index: 2;
+	text-decoration: none;
+  }
+  
+  @keyframes bounce {
+	0%, 20%, 50%, 80%, 100% { transform: translate(-50%, 0); }
+	40% { transform: translate(-50%, -10px); }
+	60% { transform: translate(-50%, -5px); }
+  }
